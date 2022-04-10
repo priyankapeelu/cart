@@ -1,7 +1,7 @@
 pipeline {
    agent any
 
-   stages
+   stages {
 
    // for each commit
    stage ('lint checks') {
