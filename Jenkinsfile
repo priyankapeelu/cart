@@ -1,5 +1,16 @@
-@Library('roboshop-shared-library@main') _
+pipeline {
+   agent any
+   }
 
-env.COMPONENT="cart"
-nodejs()
+stages {
 
+   //for each commit
+   stage('lint checks') {
+   steps {
+   sh '''
+   ~/node_modules/jslint/bin/jslint.js server.js
+   '''
+   }
+  }
+ } //End of stages
+}
