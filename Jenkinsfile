@@ -8,7 +8,7 @@ stages {
    stage('lint checks') {
    steps {
      script {
-       sample.info 'starting'
+       sample.info ('starting', 'google.com')
      }
    sh '''
      #~/node_modules/jslint/bin/jslint.js server.js
