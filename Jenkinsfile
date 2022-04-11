@@ -7,7 +7,8 @@ stages {
    stage('lint checks') {
    steps {
    sh '''
-   ~/node_modules/jslint/bin/jslint.js server.js
+     #~/node_modules/jslint/bin/jslint.js server.js
+     echo link check
    '''
    }
   }
