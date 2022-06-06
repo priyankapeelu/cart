@@ -8,4 +8,5 @@ module "cart" {
   APP_PORT            = var.APP_PORT
   WORKSTATION_IP      = var.WORKSTATION_IP
   APP_VERSION         = var.APP_VERSION
+  LB_TYPE             = "internal"
 }
